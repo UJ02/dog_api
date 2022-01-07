@@ -1,0 +1,99 @@
+.container{
+    background: linear-gradient(to right, pink, lightblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 3rem;
+    color: green;
+    font-family: sans-serif;
+    letter-spacing: 0.4rem;
+    word-spacing: 0.4rem;
+}
+.detail-container{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100px;
+}
+.breed,.sub-breed,.get-image{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.get-image{
+    height: 52px;
+    justify-content: flex-end;
+}
+#get-image{
+    outline: none;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+#get-image:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 2px white;
+}
+label{
+    font-size: large;
+    font-family: cursive;
+}
+select{
+    outline: none;
+    height: 30px;
+}
+.image-container img{
+    display: block;
+}
+.image-container{
+    margin-top: 20px;
+    background: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+    justify-items: flex-end;
+}
+.buttons{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.buttons>button{
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+@media screen and (max-width: 500px){
+    .breed,.sub-breed,.get-image{
+        width: initial;
+    }
+    .detail-container{
+        height: 150px
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .get-image{
+        width: 60%;
+    }
+}
+@media  screen and (max-width: 350px) {
+    h1{
+        font-size: 1.5rem;
+    }
+    .detail-container{
+        height: 200px;
+    }
+}
+

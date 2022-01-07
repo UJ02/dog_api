@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dog Gallery</h1>
+        <div class="detail-container">
+            <div class="breed">
+                <label for="breed">Breed</label>
+                <select name="breed" id="breed"></select>
+            </div>
+            <div class="sub-breed">
+                <label for="sub-breed">Sub-Breed</label>
+                <select name="sub-breed" id="sub-breed"></select>
+            </div>
+            <div class="get-image">
+                <button type="submit" id="get-image">Get Image</button>
+            </div>
+        </div>
+    </div>
+    <div class="container image-container"></div>
+    <div class="buttons">
+        <button type="submit" id='previous'>Previous</button>
+        <button type="submit" id="next">Next</button>
+    </div>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
